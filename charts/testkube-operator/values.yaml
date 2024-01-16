@@ -254,6 +254,10 @@ webhook:
     ## Webhook certificate secret name
     secretName: webhook-server-cert
 
+  ## Webhook NamespaceSelector
+  ### Ref: https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#matching-requests-namespaceselector
+  namespaceSelector: {}
+
 ## Create RBAC roles for users and controller
 rbac:
   create: true

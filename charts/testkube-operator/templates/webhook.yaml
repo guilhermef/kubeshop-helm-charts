@@ -41,4 +41,7 @@ webhooks:
     resources:
     - testtriggers
   sideEffects: None
+  {{- if .Values.webhook.namespaceSelector }}
+  {{- toYaml .Values.webhook.namespaceSelector | nindent 2 }}
+  {{- end }}
 {{- end }}
